@@ -59,6 +59,7 @@
 </head>
 <body class="bg-blue-50 text-gray-800 flex items-center justify-center min-h-screen p-2 sm:p-4 md:p-8">
 
+    <!-- Password Protection -->
     <div id="password-protection" class="fixed inset-0 bg-blue-50 z-50 flex items-center justify-center p-4">
         <div class="bg-white p-8 rounded-2xl shadow-2xl text-center w-full max-w-sm">
             <h2 class="text-2xl font-bold text-blue-900 mb-4">Enter Password</h2>
@@ -76,6 +77,7 @@
         </header>
 
         <main>
+            <!-- Action Buttons -->
             <div id="main-buttons-container" class="flex flex-wrap justify-center gap-4">
                  <button id="generateFrameByStyleBtn" class="main-btn">
                     Frame by Style
@@ -112,6 +114,7 @@
                 </button>
             </div>
             
+            <!-- Story Generator -->
             <div id="story-generator-container" class="hidden w-full space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                     <div>
@@ -168,7 +171,7 @@
                     </div>
                     <div>
                         <label class="font-semibold text-gray-700 mb-2 block">Choose Book Size:</label>
-                        <select id="bookSizeSelect" class="w-full max-w-md mx-auto p-2 border border-gray-300 rounded-lg shadow-sm">
+                        <select id="bookSizeSelect" class="w-full max-w-md p-2 border border-gray-300 rounded-lg shadow-sm">
                             <option value="paperback">Standard Paperback (6x9 in)</option>
                             <option value="kindle">Kindle (6x9 in ratio)</option>
                             <option value="hardcover">Hardcover (6.14x9.21 in)</option>
@@ -182,6 +185,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Frame Subcategories -->
             <div id="frame-subcategories-container" class="hidden">
                 <p class="text-gray-500 mb-4">Choose a Frame Style:</p>
                 <div class="flex flex-wrap justify-center gap-3">
@@ -197,6 +201,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Frame Shape Subcategories -->
             <div id="frame-shape-subcategories-container" class="hidden">
                 <p class="text-gray-500 mb-4">Choose a Frame Shape:</p>
                 <div class="flex flex-wrap justify-center gap-3">
@@ -209,6 +214,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Plaque Style Subcategories -->
             <div id="plaque-style-subcategories-container" class="hidden">
                 <p class="text-gray-500 mb-4">Choose a Plaque Style:</p>
                 <div class="flex flex-wrap justify-center gap-3">
@@ -229,6 +235,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Plaque Shape Subcategories -->
             <div id="plaque-shape-subcategories-container" class="hidden">
                 <p class="text-gray-500 mb-4">Choose a Plaque Shape:</p>
                 <div class="flex flex-wrap justify-center gap-3">
@@ -242,6 +249,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Background Generator -->
             <div id="background-generator-container" class="hidden">
                 <div id="background-size-selector">
                     <p class="text-gray-500 mb-4">First, choose an image size or type:</p>
@@ -261,6 +269,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
             
+             <!-- Text Generator -->
             <div id="text-generator-container" class="hidden w-full space-y-4">
                 <div>
                     <p class="text-gray-500 mb-2">1. Enter your text:</p>
@@ -293,6 +302,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Tarot Card Generator -->
             <div id="tarot-generator-container" class="hidden w-full space-y-4">
                 <div id="tarot-size-selector">
                     <p class="text-gray-500 mb-4">First, choose a card size:</p>
@@ -329,7 +339,8 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
-             <div id="deck-generator-container" class="hidden w-full space-y-4">
+             <!-- Deck Generator -->
+            <div id="deck-generator-container" class="hidden w-full space-y-4">
                  <div>
                     <p class="text-gray-500 mb-2">1. Define a consistent theme for your entire deck:</p>
                     <input type="text" id="deckThemeInput" class="w-full max-w-md p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., Art Nouveau Cats, Cosmic Horror">
@@ -346,6 +357,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
             
+            <!-- Photographic Frame Generator -->
             <div id="photographic-frame-container" class="hidden w-full space-y-4">
                 <div id="photo-size-selector">
                     <p class="text-gray-500 mb-4">1. Choose the final orientation:</p>
@@ -378,6 +390,7 @@
                 <button class="back-btn mt-6 text-gray-500 hover:text-gray-800 transition-colors">← Back</button>
             </div>
 
+            <!-- Image Resizer -->
             <div id="image-resizer-container" class="hidden w-full space-y-4">
                 <div>
                     <p class="text-gray-500 mb-2">1. Upload the image you want to resize:</p>
@@ -401,9 +414,10 @@
             </div>
 
 
+            <!-- Display Area -->
             <div id="displayArea" class="mt-8 w-full max-w-lg lg:max-w-3xl mx-auto aspect-square bg-white border border-gray-200 rounded-xl shadow-inner flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out">
                 <div id="loader" class="hidden spinner w-16 h-16 border-4 rounded-full" role="status"><span class="sr-only">Loading...</span></div>
-                <div id="story-display-container" class="hidden flex-col items-center justify-center p-4 h-full">
+                <div id="story-display-container" class="hidden flex flex-col items-center justify-center p-4 h-full">
                     <img id="storyImageDisplay" src="" alt="Generated Story Image" class="max-w-full h-auto max-h-[70%] object-contain"/>
                     <p id="storyTextDisplay" class="text-gray-700 mt-4 text-center text-sm sm:text-base"></p>
                 </div>
@@ -418,16 +432,20 @@
                 <button id="resetBtn" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">Reset</button>
             </div>
 
+            <!-- Deck Gallery -->
             <div id="deck-gallery-container" class="hidden w-full mt-6">
                 <h3 class="text-xl font-semibold mb-3 text-blue-900">Your Deck So Far</h3>
                 <div id="deck-gallery" class="flex flex-wrap gap-3 justify-center bg-white/50 p-3 rounded-xl">
-                    </div>
+                    <!-- Thumbnails will be added here -->
+                </div>
             </div>
             
-             <div id="story-gallery-container" class="hidden w-full mt-6">
+             <!-- Story Gallery -->
+            <div id="story-gallery-container" class="hidden w-full mt-6">
                 <h3 class="text-xl font-semibold mb-3 text-blue-900">Your Story So Far</h3>
                 <div id="story-gallery" class="flex flex-wrap gap-3 justify-center bg-white/50 p-3 rounded-xl">
-                    </div>
+                    <!-- Story page thumbnails will be added here -->
+                </div>
             </div>
         </main>
     </div>
@@ -810,50 +828,39 @@
             }
         });
         
-        // --- SECURE API CALLING ---
-        async function callGenerativeAPI(model, payload) {
-            const functionUrl = '/.netlify/functions/call-gemini'; 
-
-            try {
-                const response = await fetch(functionUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ model: model, payload: payload }) 
-                });
-
-                if (!response.ok) {
-                    const errorText = await response.text();
-                    throw new Error(`Function error: ${response.status} ${errorText}`);
-                }
-                
-                return await response.json();
-            } catch (error) {
-                console.error("Could not fetch from Netlify function:", error);
-                throw error;
-            }
-        }
-        
-        // Helper function to call the text model via the secure Netlify function
         async function callTextAPI(prompt) {
-             const payload = { contents: [{ parts: [{ text: prompt }] }] };
-             const result = await callGenerativeAPI('gemini-pro', payload);
-             if (result.candidates && result.candidates[0].content.parts[0].text) {
-                return result.candidates[0].content.parts[0].text;
-             }
-             throw new Error("Invalid text response from API.");
+             const apiKey = "";
+             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+             const payload = {
+                 contents: [{ parts: [{ text: prompt }] }],
+             };
+             const response = await fetch(apiUrl, {
+                 method: 'POST',
+                 headers: { 'Content-Type': 'application/json' },
+                 body: JSON.stringify(payload)
+             });
+             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+             const result = await response.json();
+             return result.candidates[0].content.parts[0].text;
         }
 
-        // Helper function to call the image model via the secure Netlify function
         async function callImageAPI(payload) {
-             const result = await callGenerativeAPI('gemini-pro', payload);
+             const apiKey = "";
+             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=${apiKey}`;
+             const response = await fetch(apiUrl, {
+                 method: 'POST',
+                 headers: { 'Content-Type': 'application/json' },
+                 body: JSON.stringify(payload)
+             });
+             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+             const result = await response.json();
              const part = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
              const base64Data = part?.inlineData?.data;
              if (base64Data) {
                  return `data:image/png;base64,${base64Data}`;
              }
-             throw new Error("Invalid image response from API.");
+             throw new Error("Invalid image response format.");
         }
-
 
         // --- Image Generation ---
         async function generate(config) {
@@ -869,7 +876,7 @@
             displayArea.style.aspectRatio = ''; // Reset dynamic aspect ratio
 
             if (config.type === 'photographic_frame') {
-                if (config.size === 'original' && uploadedPhotoData) {
+                 if (config.size === 'original' && uploadedPhotoData) {
                     const img = new Image();
                     img.onload = () => { displayArea.style.aspectRatio = img.width / img.height; };
                     img.src = uploadedPhotoData.dataUrl;
@@ -907,6 +914,7 @@
 
                     const imagePayload = {
                         contents: [{ parts: [{ text: imagePrompt }] }],
+                        generationConfig: { responseModalities: ['IMAGE'] },
                     };
                     
                     const [textResult, imageResult] = await Promise.all([
@@ -929,18 +937,19 @@
                     let prompt = '';
                     let payload = {
                         contents: [{ parts: [] }],
+                        generationConfig: { responseModalities: ['IMAGE'] },
                     };
                     
                     if (config.type === 'text') {
-                        const styleDescription = textOptions[config.style];
-                        prompt = `The text "${config.text}" ${styleDescription}. Ultra HD, 8K, high quality.`;
-                        if (config.transparent) {
-                            prompt += " Isolated with a fully transparent background, PNG format.";
-                        } else {
-                            prompt += " With a simple, complementary background that enhances the text.";
-                        }
-                        payload.contents[0].parts.push({ text: prompt });
-                        downloadBtn.download = `text-${config.text.replace(/\s+/g, '_')}.png`;
+                         const styleDescription = textOptions[config.style];
+                         prompt = `The text "${config.text}" ${styleDescription}. Ultra HD, 8K, high quality.`;
+                         if (config.transparent) {
+                             prompt += " Isolated with a fully transparent background, PNG format.";
+                         } else {
+                             prompt += " With a simple, complementary background that enhances the text.";
+                         }
+                         payload.contents[0].parts.push({ text: prompt });
+                         downloadBtn.download = `text-${config.text.replace(/\s+/g, '_')}.png`;
                     } else if (config.type === 'background') {
                         let sizePrompt = '';
                         let isTransparentObject = false;
@@ -964,8 +973,8 @@
                         } else {
                             prompt = `A beautiful high-resolution photograph of ${config.prompt}, photorealistic, detailed, ultra HD, 8K, high quality. ${sizePrompt}`;
                         }
-                        payload.contents[0].parts.push({ text: prompt });
-                        downloadBtn.download = `background-${config.prompt.replace(/\s+/g, '_')}.png`;
+                         payload.contents[0].parts.push({ text: prompt });
+                         downloadBtn.download = `background-${config.prompt.replace(/\s+/g, '_')}.png`;
                     } else if (config.type === 'tarot') {
                         const sizeInstruction = `The final image must be a tall, vertical tarot card shape, matching a standard ${config.size}.`;
                         let textInstruction = 'The card has no text, no numbers, and no borders.';
@@ -988,7 +997,7 @@
                         payload.contents[0].parts.push({ text: prompt });
                         downloadBtn.download = `deck-${config.theme.replace(/\s+/g, '_')}-${config.cardName.replace(/\s+/g, '_')}.png`;
                     } else if (config.type === 'photographic_frame') {
-                        let sizePrompt = '';
+                         let sizePrompt = '';
                         switch(config.size) {
                             case '16:9': sizePrompt = '**CRITICAL INSTRUCTION: The final output image must have a 16:9 landscape aspect ratio.**'; break;
                             case '9:16': sizePrompt = '**CRITICAL INSTRUCTION: The final output image must have a 9:16 portrait aspect ratio.**'; break;
@@ -997,20 +1006,20 @@
                             default: sizePrompt = 'The final output image should maintain the original aspect ratio of the uploaded photo.'; break;
                         }
 
-                        prompt = `Create a beautiful photographic frame around the provided image. The theme of the frame is "${config.theme}".`;
-                        if(config.text && config.text.trim() !== '') {
-                           prompt += ` Add the text "${config.text}" onto the image in a fun, celebratory font that matches the theme.`
-                        }
-                        prompt += ` The final output should be a complete image including the original photo, the new frame, and the text. Ultra HD, 8K, high quality. ${sizePrompt}`;
+                         prompt = `Create a beautiful photographic frame around the provided image. The theme of the frame is "${config.theme}".`;
+                         if(config.text && config.text.trim() !== '') {
+                            prompt += ` Add the text "${config.text}" onto the image in a fun, celebratory font that matches the theme.`
+                         }
+                         prompt += ` The final output should be a complete image including the original photo, the new frame, and the text. Ultra HD, 8K, high quality. ${sizePrompt}`;
 
-                        payload.contents[0].parts.push({ text: prompt });
-                        payload.contents[0].parts.push({ 
+                         payload.contents[0].parts.push({ text: prompt });
+                         payload.contents[0].parts.push({ 
                             inlineData: {
                                 mimeType: config.imageData.mimeType,
                                 data: config.imageData.dataUrl.split(',')[1]
                             }
-                        });
-                        downloadBtn.download = `framed-photo-${config.theme.replace(/\s+/g, '_')}.png`;
+                         });
+                         downloadBtn.download = `framed-photo-${config.theme.replace(/\s+/g, '_')}.png`;
                     }
                     else {
                         let randomStyle, useShape, randomDetail;
@@ -1033,7 +1042,7 @@
                         } else {
                             prompt = `${basePrompt} Isolated with a fully transparent background, PNG format.`;
                         }
-                        payload.contents[0].parts.push({ text: prompt });
+                         payload.contents[0].parts.push({ text: prompt });
                     }
 
                     imageUrl = await callImageAPI(payload);
@@ -1055,7 +1064,7 @@
             } finally {
                 loader.classList.add('hidden');
                 allButtons.forEach(btn => btn.disabled = false);
-                // After a text generation or photo frame generation, re-check state to disable buttons
+                 // After a text generation or photo frame generation, re-check state to disable buttons
                 if(config.type === 'text') checkTextGeneratorState();
                 if(config.type === 'photographic_frame') checkPhotoFrameState();
             }
@@ -1150,7 +1159,7 @@
         frameShapeSubcategoriesContainer.querySelectorAll('.subcategory-btn[data-shape]').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 chosenShape = e.target.dataset.shape;
-                // Immediately set aspect ratio for frames
+                 // Immediately set aspect ratio for frames
                 displayArea.classList.remove('aspect-square', 'aspect-[16/9]');
                 displayArea.classList.add('aspect-[9/16]');
                 showSubcategories('frame-style');
@@ -1160,14 +1169,14 @@
         backgroundSizeSelector.querySelectorAll('.subcategory-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 chosenBGSize = e.target.dataset.size;
-                // Adjust display area aspect ratio immediately upon selection
+                 // Adjust display area aspect ratio immediately upon selection
                 displayArea.classList.remove('aspect-square', 'aspect-[9/16]', 'aspect-[16/9]');
                 if (chosenBGSize === '9:16' || chosenBGSize === 'tarot') {
                     displayArea.classList.add('aspect-[9/16]');
                 } else if (chosenBGSize === '16:9') {
                     displayArea.classList.add('aspect-[16/9]');
                 }
-                else {
+                 else {
                     displayArea.classList.add('aspect-square');
                 }
 
@@ -1447,8 +1456,8 @@
              const characterDesc = characterDescInput.value.trim();
 
             if (!storyTheme || !artStyle || !characterDesc) {
-                errorMessage.textContent = "Please fill in all story, character, and style fields first.";
-                return;
+                 errorMessage.textContent = "Please fill in all story, character, and style fields first.";
+                 return;
             }
             
             // Generate Outline
@@ -1483,8 +1492,8 @@
              const customImagePrompt = customPageImagePrompt.value.trim();
 
             if (!storyTheme || !artStyle || !characterDesc || !customText || !customImagePrompt) {
-                errorMessage.textContent = "Please fill in all story fields and the custom page fields.";
-                return;
+                 errorMessage.textContent = "Please fill in all story fields and the custom page fields.";
+                 return;
             }
             subtitle.textContent = "Generating custom page...";
             const imagePrompt = `An illustration in the style of '${artStyle}' for a story about '${storyTheme}'. The scene is: '${customImagePrompt}'. The main character is: '${characterDesc}'.`;
@@ -1546,10 +1555,7 @@
             const coverImageUrl = await callImageAPI(coverPayload);
             const coverImg = new Image();
             coverImg.src = coverImageUrl;
-            await new Promise((resolve, reject) => {
-                coverImg.onload = resolve;
-                coverImg.onerror = reject;
-            });
+            await new Promise(r => coverImg.onload = r);
             doc.addImage(coverImg, 'PNG', 0, 0, pageWidth, pageHeight);
 
             // --- Title Page ---
@@ -1592,7 +1598,6 @@
                     };
                     img.onerror = () => {
                         console.error("Failed to load image for PDF");
-                        doc.text(`[Image for page ${i+1} failed to load]`, margin, margin);
                         resolve(); 
                     }
                 });
@@ -1606,10 +1611,7 @@
              const backCoverImgUrl = await callImageAPI(backCoverPayload);
              const backCoverImg = new Image();
              backCoverImg.src = backCoverImgUrl;
-             await new Promise((resolve, reject) => {
-                backCoverImg.onload = resolve;
-                backCoverImg.onerror = reject;
-            });
+             await new Promise(r => backCoverImg.onload = r);
              doc.addPage();
              doc.addImage(backCoverImg, 'PNG', 0, 0, pageWidth, pageHeight);
              if (blurb) {
@@ -1657,3 +1659,4 @@
     </script>
 </body>
 </html>
+
