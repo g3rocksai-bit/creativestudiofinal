@@ -836,7 +836,7 @@
         // Helper function to call the text model via the secure Netlify function
         async function callTextAPI(prompt) {
              const payload = { contents: [{ parts: [{ text: prompt }] }] };
-             const result = await callGenerativeAPI('gemini-1.5-flash', payload);
+             const result = await callGenerativeAPI('gemini-pro', payload);
              if (result.candidates && result.candidates[0].content.parts[0].text) {
                 return result.candidates[0].content.parts[0].text;
              }
@@ -845,7 +845,7 @@
 
         // Helper function to call the image model via the secure Netlify function
         async function callImageAPI(payload) {
-             const result = await callGenerativeAPI('gemini-1.5-flash', payload);
+             const result = await callGenerativeAPI('gemini-pro', payload);
              const part = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
              const base64Data = part?.inlineData?.data;
              if (base64Data) {
